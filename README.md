@@ -1,14 +1,25 @@
-# Welcome to your CDK TypeScript project!
+# Amazon SageMaker Jupyter notebook by CDK
 
-This is a blank project for TypeScript development with CDK.
+## Requirements
+[CDK로 EKS 클러스터 풀스택 관리하기 > 워크샵 사전 준비 사항](http://demogo-multiregion-eks.s3-website.ap-northeast-2.amazonaws.com/ko/20-preq/) 참조
+* AWS CLI
+* AWS Account and User
+* Node.js
+* IDE for your programming language
+* AWS CDK Toolkit
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## CDK Stack Installation
+```
+$ git clone https://github.com/sidkwon/aws-sm-notebook-cdk.git
+$ npm i
+$ cdk deploy SmHolYjStack --parameters myInitial=[임의의 Initial]
+  예) cdk deploy SmHolYjStack --parameters myInitial=aws
+```
 
-## Useful commands
+## CDK outputs
+* `jupyterLabURL` : Jupyter Lab URL
+* `jupyterNotebookURL` : Jupyter Notebook URL
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+## References
+[cdk-sagemaker-example](https://github.com/mattmcclean/cdk-sagemaker-example)
+[CDK aws-sagemaker module](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-sagemaker-readme.html)
