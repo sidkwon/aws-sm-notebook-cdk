@@ -21,5 +21,5 @@ $ cdk deploy SmHolYjStack --parameters myInitial=[임의의 Initial]
 * `jupyterNotebookURL` : Jupyter Notebook URL
 
 ## References
-[cdk-sagemaker-example](https://github.com/mattmcclean/cdk-sagemaker-example)
-[CDK aws-sagemaker module](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-sagemaker-readme.html)
+* [cdk-sagemaker-example](https://github.com/mattmcclean/cdk-sagemaker-example)
+* [CDK aws-sagemaker module](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-sagemaker-readme.html)
