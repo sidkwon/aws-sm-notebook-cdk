@@ -8,10 +8,11 @@
 * IDE for your programming language
 * AWS CDK Toolkit
 
-## CDK Stack Installation
+## CDK Stack Deployment
 ```
 $ git clone https://github.com/sidkwon/aws-sm-notebook-cdk.git
 $ npm i
+$ cdk list
 $ cdk deploy SmHolYjStack --parameters myInitial=[임의의 Initial]
   예) cdk deploy SmHolYjStack --parameters myInitial=aws
 ```
